@@ -309,9 +309,7 @@ if __name__=="__main__":
     keyCmd = sys.argv[1]
     keyCmd = str(keyCmd)
     IR = IR_Control("/dev/ttyUSB0", 9600)
-    if IR.StartIrSend("GX公版遥控", keyCmd):
+    if IR.StartIrSend("示例遥控", keyCmd):
         print("%s: 指令红外发送成功!"%keyCmd)
     else:
         print("%s: 指令红外发送失败!"%keyCmd)
-   
-    
